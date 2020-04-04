@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+//Question1
+var arr = [];
+
+for(i=0;i<6;i++){
+    arr[i]=Number(prompt('Enter a Number: ' + (i+1)));
+}
+
+//Question2
+console.log(arr);
+
+//Question3+Question4
+var largest = arr[0];
+var smallest = arr[0];
+var sum = 0;
+
+for(var i=0;i<arr.length;i++){
+
+if (arr[i] > largest)
+  largest = arr[i];
+
+if (arr[i] < smallest)
+  smallest = arr[i];
+
+sum += arr[i];
+} 
+
+console.log("The largest number in the array: "+largest);
+console.log("The smaller number in the array: "+smallest);
+console.log("The sum of the numbers in the array: "+sum);
+
+//Question5
+var arrOdd = [];
+var arrEven = [];
+
+for(var n=0;n<arr.length;n++){
+    if(arr[n]%2 == 0)
+    arrOdd[n]=arr[n];
+
+    else{
+        arrEven[n]=arr[n];
+    }
+}
+    console.log(arrOdd);
+    console.log(arrEven);
+
+//Question6
+var HighNum=arr[0];
+var SecondNum=arr[0];
+
+for(i=0;i<arr.length;i++)
+{
+if (arr[i]>HighNum)
+    SecondNum=HighNum;
+    HighNum=arr[i];
+}
+console.log("The second largest number in the array: "+SecondNum);
+
+
+
+</script>
+
+</body>
+</html>

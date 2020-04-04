@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+var matrix =
+        [
+            [ true , true ], 
+            [ true , false ],
+            [ false , true ],
+            [ false , false ]
+        ];
+
+        console.log(matrix);
+        console.log("1 = true,0=false");
+
+console.log("----AND Logic gates----");
+
+console.log(`true AND true = ${matrix[0][0] && + matrix[0][1]}` + " true");
+console.log(`true AND false = ${matrix[1][0] && + matrix[1][1]}` + " false");
+console.log(`false AND true = ${matrix[2][0] && + matrix[2][1]}`);
+console.log(`false AND false = ${matrix[3][0] && + matrix[3][1]}`);
+
+console.log("----OR Logic gates----");
+
+console.log(`true OR true = ${matrix[0][0] || + matrix[0][1]}`);
+console.log(`true OR false = ${matrix[1][0] || + matrix[1][1]}`);  
+console.log(`false OR true = ${matrix[2][0] || + matrix[2][1]}` + " true");
+console.log(`false OR false = ${matrix[3][0] || + matrix[3][1]}` + " false");
+
+console.log("----XOR Logic gates----");
+
+console.log(`true XOR true = ${matrix[0][0] ^ + matrix[0][1]}` + " false");
+console.log(`true XOR false = ${matrix[1][0] ^ + matrix[1][1]}` + " true");
+console.log(`false XOR true = ${matrix[2][0] ^ + matrix[2][1]}` + " true");
+console.log(`false XOR false = ${matrix[3][0] ^ + matrix[3][1]}` + " false");
+
+
+
+</script>
+
+
+</body>
+</html>
