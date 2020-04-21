@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Question 3
+        function getParamType(p){
+           return typeof(p);
+        }
+
+    console.log(getParamType(2))       
+    console.log(getParamType("Shahar")) 
+    console.log(getParamType(true)) 
+    console.log(getParamType(undefined)) 
+    console.log(getParamType([0]))
+    console.log(getParamType(func))
+
+    function func(){
+        console.log("only to test");
+    }
+
+    </script>
+
+</body>
+</html>
