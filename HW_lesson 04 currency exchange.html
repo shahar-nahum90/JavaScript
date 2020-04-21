@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Question 4
+    num=10;
+    console.log(`num=10 Dollar to Shekel:${Dollar_to_Shekel(num)}`);
+    console.log(`num=10 Shekel to Dollar:${ShekeltoDollar(num)}`);
+    console.log(`num=10 Euro to Shekel:${EurotoShekel(num)}`);
+    console.log(`num=10 Shekel to Euro:${ShekeltoEuro(num)}`);
+
+    function typeOfindex(num){
+            console.log((typeof(num)));
+        }
+        function  Dollar_to_Shekel(num){
+            num=num*3.5;
+            return num;
+        }
+        function  ShekeltoDollar(num){
+            num=num/3.5;
+            return num;
+        }
+        function  EurotoShekel(num){
+            num=num/5;
+            return num;
+        }
+        function  ShekeltoEuro(num){
+            num=num*5;
+            return num;
+        }
+    </script>
+</body>
+</html>
