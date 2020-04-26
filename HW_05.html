@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    //Question 1
+    var num1 = Number(prompt("Enter the number of seconds:"));
+    var num2 = Number(prompt("Enter a number for the number of rounds:"));
+
+        for(var i = 0; i<num2; i++)(
+            setTimeout(
+                function(){
+                    console.log(Math.floor(Math.random() * Math.floor(11)))
+        },num1*1000*i)    
+    );
+
+
+    //Question 2
+    var ms = 4000;
+        var arr = ["Dani","Sagi","Shahar","Shaked","Adi","Hezi","Hay"];
+        function print(arr){
+            var counter = 0;
+            for(var i = 0; i < arr.length; i++){
+                setTimeout(
+                    function(){
+                    console.log(arr[counter++]);
+                },ms*i
+                )
+            }
+        }
+        print(arr); 
+    
+
+    // Question 3 Sqrt
+    var num = Number(prompt('Enter a Number: '));
+    function GetSqrt(num){
+        return Math.sqrt(num);
+    }
+    var func = GetSqrt(num);
+    alert(`The sqrt is ${func}`);
+
+
+    // Question 4 power
+    function Get2Num(){
+        var num1 = Number(prompt("Enter a num1:"))
+        var num2 = Number(prompt("Enter a num2:"))
+        return (Math.pow(num1,num2))
+    };
+    var func1 = Get2Num();    
+    alert(`The pow is ${func1}`);
+
+ 
+    // Question 5 slice
+    function Find(){
+        var song = prompt("Enter the name of the song: ");
+        var lyrics = prompt("paste the lyrics:");
+        var find = lyrics.indexOf(song.toLowerCase());
+        return find;
+        }
+        console.log(Find());
+    </script>
+</body>
+</html>
